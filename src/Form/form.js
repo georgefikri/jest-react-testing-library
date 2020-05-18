@@ -20,9 +20,9 @@ function Form() {
     }
 
     return (
-        <div>
+        <div data-testid='formContainer'>
             <form data-testid="form">
-                <div>
+                <div data-testid='FNCont'>
                     <span>first name</span>
                     <input type='text' data-testid="firstName" placeholder='first name' value={name.name} name='name' onChange={handleChange} />
                 </div>

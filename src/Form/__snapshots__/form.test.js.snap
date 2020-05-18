@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the simple form snapshot testing button submit 1`] = `
+<button
+  data-testid="clickme"
+>
+  click me
+</button>
+`;
+
+exports[`test the simple form snapshot testing the whole form 1`] = `
+<div
+  data-testid="formContainer"
+>
+  <form
+    data-testid="form"
+  >
+    <div
+      data-testid="FNCont"
+    >
+      <span>
+        first name
+      </span>
+      <input
+        data-testid="firstName"
+        name="name"
+        onChange={[Function]}
+        placeholder="first name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <span>
+        last name
+      </span>
+      <input
+        name="lastName"
+        onChange={[Function]}
+        placeholder="last name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <button
+        data-testid="clickme"
+        onClick={[Function]}
+      >
+        click me
+      </button>
+    </div>
+  </form>
+</div>
+`;
