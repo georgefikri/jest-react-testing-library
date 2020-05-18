@@ -1,8 +1,10 @@
 import React from 'react'
-import { render, getByTestId, fireEvent } from '@testing-library/react';
+import { render, getByTestId, fireEvent , cleanup } from '@testing-library/react';
 import Form from './form'
 
 describe('test the simple form', ()=> {
+
+    afterEach(cleanup)
    test ('check if id is here', ()=> {
     const { getByTestId } = render(<form data-testid="form" />);
     const linkElement = getByTestId('form')
